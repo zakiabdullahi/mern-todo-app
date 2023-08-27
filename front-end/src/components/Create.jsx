@@ -5,7 +5,7 @@ const Create = () => {
   const [task, setTask] = useState("");
   const handleAdd = () => {
     axios
-      .post("http://localhost:30001/add", { task: task })
+      .post("https://todo-api-ebon.vercel.app/add", { task: task })
 
       .then((res) => {
         console.log(res);

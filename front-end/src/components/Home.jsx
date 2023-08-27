@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:30001/get")
+      .get("https://todo-api-ebon.vercel.app/get")
 
       .then((res) => {
         // console.log(res.data);
@@ -25,7 +25,7 @@ const Home = () => {
 
   const handleEdit = (id) => {
     axios
-      .put("http://localhost:30001/edit/" + id)
+      .put("https://todo-api-ebon.vercel.app/edit/" + id)
 
       .then((res) => {
         console.log(res.data);
@@ -36,7 +36,7 @@ const Home = () => {
   };
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:30001/delete/" + id)
+      .delete("https://todo-api-ebon.vercel.app/delete/" + id)
 
       .then((res) => {
         console.log(res.data);
