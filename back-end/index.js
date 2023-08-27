@@ -9,10 +9,21 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors(
+
+    {
+        origin: ["https://mern-todo-app-silk.vercel.app"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true
+    }
+));
 
 
 mongoose.connect("mongodb+srv://Zaki1234:Zaki1234@cluster0.1yegjdw.mongodb.net/?retryWrites=true&w=majority")
+
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
 
 app.post('/add', (req, res) => {
 
