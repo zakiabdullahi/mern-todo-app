@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  width: 345px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 2px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.create_form input {
+  width: 300px;
+  padding: 10px;
+  outline: none;
+  border-bottom: 2px solid;
+}
+.create_form button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.checkbox .icon {
+  margin-right: Spx;
+  font-size: 15px;
+}
+
+.todo div span {
+  margin: 0px 5px 0px 4px;
+}
+.todo div .icon {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 640px) {
+  .home {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
