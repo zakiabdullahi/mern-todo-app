@@ -19,7 +19,7 @@ app.use(cors(
 ));
 
 
-mongoose.connect("mongodb+srv://Zaki1234:Zaki1234@cluster0.1yegjdw.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://Zaki1234:Zaki1234@cluster0.1yegjdw.mongodb.net/mern-app?retryWrites=true&w=majority")
 
 app.get('/', (req, res) => {
     res.send('Hello World')
