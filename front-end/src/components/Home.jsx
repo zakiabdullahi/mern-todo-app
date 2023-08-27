@@ -21,7 +21,7 @@ const Home = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [todos]);
+  }, []);
 
   const handleEdit = (id) => {
     axios
